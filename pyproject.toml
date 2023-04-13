@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "image-embeddings"
+version = "0.1.0"
+description = ""
+authors = ["franperic <fran.peric@proton.me>"]
+readme = "README.md"
+packages = [{include = "image_embeddings"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pillow = "^9.5.0"
+timm = {git = "https://github.com/rwightman/pytorch-image-models.git"}
+torch = "^2.0.0"
+matplotlib = "^3.7.1"
+numpy = "^1.24.2"
+pandas = "^2.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
